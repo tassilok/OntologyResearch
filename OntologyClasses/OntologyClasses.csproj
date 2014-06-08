@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{386F09AD-E03B-43C9-8D80-C704D76E9991}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OntologyClasses.DataClasses</RootNamespace>
+    <AssemblyName>OntologyClasses</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClasses\AttributeContainer.cs" />
+    <Compile Include="BaseClasses\AttributeType.cs" />
+    <Compile Include="BaseClasses\ObjectAttribute.cs" />
+    <Compile Include="DataClasses\BaseAttributeTypes.cs" />
+    <Compile Include="DataClasses\BaseClassAttributes.cs" />
+    <Compile Include="DataClasses\BaseClasses.cs" />
+    <Compile Include="DataClasses\BaseDataTypes.cs" />
+    <Compile Include="DataClasses\BaseDirections.cs" />
+    <Compile Include="DataClasses\BaseLogStates.cs" />
+    <Compile Include="BaseClasses\BaseOntologyItemTypes.cs" />
+    <Compile Include="DataClasses\BaseObjectAttributes.cs" />
+    <Compile Include="DataClasses\BaseRegEx.cs" />
+    <Compile Include="DataClasses\BaseRelationTypes.cs" />
+    <Compile Include="BaseClasses\ClassAttribute.cs" />
+    <Compile Include="DataClasses\EsFields.cs" />
+    <Compile Include="GlobalOntologyConfiguration.cs" />
+    <Compile Include="BaseClasses\OntologyEdge.cs" />
+    <Compile Include="BaseClasses\OntologyNode.cs" />
+    <Compile Include="OntologyRules\OntologyRuleCardinality.cs" />
+    <Compile Include="OntologyRules\OntologyRuleWeight.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

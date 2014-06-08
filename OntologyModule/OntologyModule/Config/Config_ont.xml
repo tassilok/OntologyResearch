@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Configuration>
+  <Configurations>
+    <ConfigurationItem Name="Index" Value="iontology"/>
+    <ConfigurationItem Name="Port" Value="9200"/>
+    <ConfigurationItem Name="Server" Value="localhost"/>
+    <ConfigurationItem Name="SearchRange" Value="20000" />
+  </Configurations>
+</Configuration>
